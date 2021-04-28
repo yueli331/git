@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <form>
+        <head>
+            <meta charset="utf-8">
+            <title>研究生报名网站</title>
+            <style>
+                body {text-align: center;} table {margin: auto;}
+            </style>
+        </head>
+        <body>
+            <p align=center><font size="5" color="#FF0000">全国研究生入学统一考试报名信息登记表</font></p>
+            <table  border="1" width="1000" height="1500">
+               <tr>
+                   <th>报考单位代码</th>
+                   <th><input type="text"></th>
+                   <th>考生姓名</th>
+                   <th><input type="text"></th>
+               </tr>
+               <tr>
+                <th>出生日期</th>
+                <th><input type="date" /></th>
+                <th>民族</th>
+                <th><input type="text"></th>
+            </tr> 
+            <tr>
+                <th>性别</th>
+                <th>  <input type="radio" value="man" name="sex"/>
+                    男
+                    <input type="radio" value="woman" name="sex"/>
+                    女 <br/></th>
+                <th>政治面貌</th>
+                <th>  <select >
+                    <option>团员</option>
+                    <option>党员</option>
+                    <option>群众</option>
+                    <option>其他党派</option>
+                  </select> <br/></th>
+            </tr> 
+            <tr>
+                <th>报考单位代码</th>
+                <th> <input type="text"></th>
+                <th>考生姓名</th>
+                <th><input type="text"></th>
+            </tr> 
+            <tr>
+                <th>现在学习或工作单位</th>
+                <th colspan="3"><input type="text" style="width:600px;height:20px;"></th></textarea><br/>
+            </tr> 
+            <tr>
+                <th>联系电话</th>
+                <th><input type="text"></th>
+                <th>最后毕业年月</th>
+                <th><input type="text"></th>
+            </tr> 
+            <tr>
+                <th>何时何地何原因受过何种奖励</th>
+                <th colspan="3"><input type="text" style="width:600px;height:20px;"></th></textarea><br/>
+            </tr> 
+            <tr>
+                <th>家庭主要成员</th>
+                </th>
+            </tr> 
+            <tr>
+                <th>自我总结</th>
+                <th colspan="3"><input type="text" style="width:600px;height:20px;"></th></textarea><br/>
+            </tr> 
+            <tr>
+                <td>上传近期照片</td>
+             
+                    <td colspan="3"><body> <style>
+                        input{border:2px solid rgb(0, 0, 0);}
+                        .clear{clear:both;}
+                        .ehdel_upload_show input{float:left; margin-top:10px;}
+                        .ehdel_upload{float:left;margin-top:-20px; *margin-top:-40px; filter:alpha(opacity=0);-moz-opacity:0;opacity:0;}
+                        </style> <form method="post" action="" enctype="multipart/form-data">
+                        <div class="ehdel_upload_show">
+                        <input id="ehdel_upload_text" type="text" name="txt" />
+                        <input id="ehdel_upload_btn" type="image"  value="浏览" />
+                        </div>
+                        <div class="clear"></div>
+                        <input type="file" onchange="ehdel_upload_text.value=this.value" class="ehdel_upload" />
+                        </form>
+                    </td>
+            </tr>
+            <tr>
+                <th colspan="4">
+                    <a href="tiaozhuan.html" target="_black">确定</a>
+                    <input type="reset" value="重置">
+                </th>
+            </tr>   
+            </table>
+        </body>
+    </html>
+    </form>
